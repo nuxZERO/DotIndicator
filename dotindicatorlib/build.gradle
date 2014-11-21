@@ -1,11 +1,12 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 21
     buildToolsVersion "21.0.2"
 
     defaultConfig {
-        applicationId "me.cafecode.lib.dotindicator"
+        applicationId "me.cafecode.lib.dotindicatorlib"
         minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
@@ -19,8 +20,12 @@ android {
     }
 }
 
+bintray {
+    user = 'nuxZERO'
+    key = '0123aa74f4f5a8a0a82ebfb631850600c6a1376e'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v4:21.0.0'
-    compile project(':dotindicatorlib')
 }

@@ -3,4 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- Default radius for dots -->
+    <dimen name="dot_radius_size">4dp</dimen>
+
 </resources>

@@ -1,11 +1,9 @@
-package me.cafecode.lib.dotindicator;
+package me.cafecode.lib.dotindicatorlib;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import me.cafecode.lib.dotindicatorlib.DotIndicator;
 
 
 public class MainActivity extends Activity {
@@ -14,11 +12,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        DotIndicator indicator = (DotIndicator) findViewById(R.id.indicator);
-//        indicator.setTotalDots(5);
-        indicator.setActivedPosition(4);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

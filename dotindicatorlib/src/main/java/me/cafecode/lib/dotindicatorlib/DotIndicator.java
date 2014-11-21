@@ -1,4 +1,4 @@
-package me.cafecode.lib.dotindicator;
+package me.cafecode.lib.dotindicatorlib;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,7 +10,6 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.ViewParent;
 
 /**
  * Created by Natthawut Hemathulin on 11/20/14 AD.
@@ -168,6 +167,11 @@ public class DotIndicator extends View {
         });
     }
 
+    /**
+     * Convert drawable to bitmap
+     * @param drawable is Drawable
+     * @return Bitmap
+     */
     private Bitmap drawableToBitmap (Drawable drawable) {
 
         if (drawable instanceof BitmapDrawable) {
@@ -180,7 +184,7 @@ public class DotIndicator extends View {
             bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
         } else {
             // Specify dot radius size
-            bitmap = Bitmap.createBitmap(mRadius *2, mRadius *2, Bitmap.Config.ARGB_8888);
+            bitmap = Bitmap.createBitmap(mRadius*2, mRadius*2, Bitmap.Config.ARGB_8888);
         }
         Canvas canvas = new Canvas(bitmap);
         drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
