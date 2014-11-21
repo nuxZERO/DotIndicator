@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Attributes for DotIndicator custom view -->
+    <declare-styleable name="DotIndicator">
+        <attr name="size" format="integer"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="space" format="dimension"/>
+        <attr name="src_normal" format="integer"/>
+        <attr name="src_actived" format="integer"/>
+        <attr name="dot_style" format="enum">
+            <enum name="light" value="0"/>
+            <enum name="dark" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
